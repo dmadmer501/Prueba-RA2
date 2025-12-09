@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página web F1</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="site-header">
+    <h1><a href="#hero">La formula de Dan1</a></h1>
+
+    <nav class="main-nav">
+      <ul>
+        <li><a href="#hero">Inicio</a></li>
+        <li><a href="#galeria">Pilotos</a></li>
+        <li><a href="#tabla">Equipos</a></li>
+        <li><a href="#formulario">Suscribirse</a></li>
+        <li><a href="https://www.formula1.com/" target="_blank" title="Web Oficial de Fórmula 1">F1 Web</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <input type="checkbox" id="menu-toggle" class="menu-toggle" hidden>
+
+  <label for="menu-toggle" class="open-menu" aria-label="Abrir menú lateral">
+      ☰
+  </label>
+
+  <nav id="sideMenu" class="side-menu">
+    <ul>
+        <li><a href="#hero">Inicio</a></li>
+        <li><a href="#galeria">Galería de Pilotos</a></li>
+        <li><a href="#tabla">Tabla de Equipos</a></li>
+        <li><a href="#formulario">Formulario de Contacto</a></li>
+        <li><a href="#adicional">Sobre la Web</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <section id="hero" class="hero-section">
+        <div class="hero-text">
+            <h2>Página web Fórmula 1</h2>
+            <p>Bienvenido al mi sitio web de formula 1.</p>
+            <a href="#galeria" class="button">Ver Pilotos</a>
+        </div>
+        <div class="hero-image">
+            <img src="https://imgs.search.brave.com/hA5g9l3J8UkpnoUZqGkG2YiJofGZOj1IcDgJ116UySk/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9jZG4t/OS5tb3RvcnNwb3J0/LmNvbS9pbWFnZXMv/bWdsLzBhcktNTFgy/L3MzMDAvbGFuZG8t/bm9ycmlzLW1jbGFy/ZW4uanBn" alt="Coche de Fórmula 1 en pista" loading="lazy">
+        </div>
+    </section>
+
+    <section id="galeria">
+      <h2>Pilotos Destacados (Galería)</h2>
+      <div class="galeria-grid">
+        <a href="https://imgs.search.brave.com/7fxVdYlpQhkkjFwzycFX2l3dksdcGdotpFROB4aZyaM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5mb3JtdWxhMS5j/b20vaW1hZ2UvdXBs/b2FkL3RfMTZieTlO/b3J0aC9jX2xmaWxs/LHdfMzM5Mi9xX2F1/dG8vdjE3NDAwMDAw/MDAvdHJhY2tzaWRl/LWltYWdlcy8yMDI0/L0YxX0dyYW5kX1By/aXhfb2ZfTGFzX1Zl/Z2FzLzIxODY1ODQ2/MDYud2VicA" target="_blank">
+          <img src="https://imgs.search.brave.com/7fxVdYlpQhkkjFwzycFX2l3dksdcGdotpFROB4aZyaM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5mb3JtdWxhMS5j/b20vaW1hZ2UvdXBs/b2FkL3RfMTZieTlO/b3J0aC9jX2xmaWxs/LHdfMzM5Mi9xX2F1/dG8vdjE3NDAwMDAw/MDAvdHJhY2tzaWRl/LWltYWdlcy8yMDI0/L0YxX0dyYW5kX1By/aXhfb2ZfTGFzX1Zl/Z2FzLzIxODY1ODQ2/MDYud2VicA" alt="Descripción A" class="thumb">
+        </a>
+        <a href=" https://imgs.search.brave.com/0xF31TROnazG2d4ArsKErrHj-yQyRxtdDiGawasQ7n0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMjIx/ODEwNTY2MS9waG90/by9iYXJjZWxvbmEt/c3BhaW4tdGhpcmQt/cGxhY2VkLWNoYXJs/ZXMtbGVjbGVyYy1v/Zi1tb25hY28tYW5k/LXNjdWRlcmlhLWZl/cnJhcmktbG9va3Mt/b24taW4tcGFyYy5q/cGc_cz02MTJ4NjEy/Jnc9MCZrPTIwJmM9/d2loaVhFSEtYZkVS/b2FPekFfQl8tc0Rw/WVRwdHQ4dUh6ZFdZ/bkxNYkVMcz0" target="_blank">
+          <img src=" https://imgs.search.brave.com/0xF31TROnazG2d4ArsKErrHj-yQyRxtdDiGawasQ7n0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMjIx/ODEwNTY2MS9waG90/by9iYXJjZWxvbmEt/c3BhaW4tdGhpcmQt/cGxhY2VkLWNoYXJs/ZXMtbGVjbGVyYy1v/Zi1tb25hY28tYW5k/LXNjdWRlcmlhLWZl/cnJhcmktbG9va3Mt/b24taW4tcGFyYy5q/cGc_cz02MTJ4NjEy/Jnc9MCZrPTIwJmM9/d2loaVhFSEtYZkVS/b2FPekFfQl8tc0Rw/WVRwdHQ4dUh6ZFdZ/bkxNYkVMcz0" alt="Descripción A" class="thumb">
+        </a>
+        <a href="https://imgs.search.brave.com/dp8yHbpfK6detjMOk_sg2C_Gvpf4M8YQ1XVy_adZSjQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMjIx/MTAxNTg4MC9waG90/by9qZWRkYWgtc2F1/ZGktYXJhYmlhLWZl/cm5hbmRvLWFsb25z/by1vZi1zcGFpbi1h/bmQtYXN0b24tbWFy/dGluLWYxLXRlYW0t/bG9va3Mtb24taW4t/dGhlLWdhcmFnZS5q/cGc_cz02MTJ4NjEy/Jnc9MCZrPTIwJmM9/bzRlY2dUTE5WMGxG/TjgyNW9oeEE1Rmpm/RWUxWllqVFZheTVB/RnlVbll0RT0" target="_blank">
+          <img src="https://imgs.search.brave.com/dp8yHbpfK6detjMOk_sg2C_Gvpf4M8YQ1XVy_adZSjQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMjIx/MTAxNTg4MC9waG90/by9qZWRkYWgtc2F1/ZGktYXJhYmlhLWZl/cm5hbmRvLWFsb25z/by1vZi1zcGFpbi1h/bmQtYXN0b24tbWFy/dGluLWYxLXRlYW0t/bG9va3Mtb24taW4t/dGhlLWdhcmFnZS5q/cGc_cz02MTJ4NjEy/Jnc9MCZrPTIwJmM9/bzRlY2dUTE5WMGxG/TjgyNW9oeEE1Rmpm/RWUxWllqVFZheTVB/RnlVbll0RT0" alt="Descripción A" class="thumb">
+        </a>  
+        <a href="https://imgs.search.brave.com/Kxmx21RwQcmE_U2jTfNsUIn-kB-pNLj93yV5br_mQrc/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly90aHVt/YnMuZHJlYW1zdGlt/ZS5jb20vYi9sYW5k/by1ub3JyaXMtbW9u/dGUtY2FybG8tbW9u/YWNvLW1heS1tY2xh/cmVuLWYtZ3JhbmQt/cHJpeC0yNDg0NjY4/NjIuanBn" target="_blank">
+          <img src="https://imgs.search.brave.com/Kxmx21RwQcmE_U2jTfNsUIn-kB-pNLj93yV5br_mQrc/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly90aHVt/YnMuZHJlYW1zdGlt/ZS5jb20vYi9sYW5k/by1ub3JyaXMtbW9u/dGUtY2FybG8tbW9u/YWNvLW1heS1tY2xh/cmVuLWYtZ3JhbmQt/cHJpeC0yNDg0NjY4/NjIuanBn" alt="Descripción A" class="thumb">
+        </a>
+      </div>
+      
+    </section>
+    <section id="tabla">
+      <h2>Tabla de Equipos (Top 5)</h2>
+      <table>
+          <thead>
+              <tr>
+                  <th>Posición</th>
+                  <th>Equipo</th>
+                  <th>Sede</th>
+                  <th>Puntos (Ej.)</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr><td>1</td><td>Red Bull Racing</td><td>Milton Keynes</td><td>750</td></tr>
+              <tr><td>2</td><td>Ferrari</td><td>Maranello</td><td>520</td></tr>
+              <tr><td>3</td><td>McLaren</td><td>Woking</td><td>450</td></tr>
+              <tr><td>4</td><td>Mercedes</td><td>Brackley</td><td>400</td></tr>
+              <tr><td>5</td><td>Aston Martin</td><td>Silverstone</td><td>280</td></tr>
+          </tbody>
+      </table>
+    </section>
+
+    <section id="formulario">
+      <h2>Formulario de Suscripción</h2>
+      <form action="#" method="POST" class="contact-form">
+        <div class="form-group">
+            <label for="nombre">Tu Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Tu Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="favorito">Piloto Favorito (Select):</label>
+            <select id="favorito" name="favorito" required>
+                <option value="" disabled selected>Elige uno</option>
+                <option value="MV">Verstappen</option>
+                <option value="LH">Hamilton</option>
+                <option value="FA">Alonso</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="comentario">Comentario (Textarea):</label>
+            <textarea id="comentario" name="comentario" rows="3"></textarea>
+        </div>
+        <button type="submit" class="button">Enviar</button>
+      </form>
+    </section>
+
+    <section id="adicional">
+      <h2>Sobre Nosotros</h2>
+      <p>Este es un mini-proyecto sencillo creado con el único propósito de aplicar HTML5 y CSS3 según las instrucciones de la práctica. Uso de Flexbox y Grid garantizado.</p>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 — Proyecto F1 Simple | 1º DAM.</p>
+    <a href="#hero" class="back-to-top" title="Volver al principio">↑</a>
+  </footer>
+</body>
+</html>

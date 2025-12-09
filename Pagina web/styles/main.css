@@ -1,0 +1,377 @@
+
+@font-face {
+  font-family: 'Roboto Local';
+  src: url('../fonts/Roboto-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto Local', sans-serif; /* Fuente local */
+  line-height: 1.5;
+  background-color: #FFFFFF;
+  color: #333333;
+  padding-top: 50px;
+}
+
+h1, h2 {
+    font-family: 'Oswald', sans-serif; /* Fuente online */
+    color: #CC0000;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+main {
+  width: min(1000px, 90%);
+  margin: 0 auto;
+}
+
+main section {
+    padding: 40px 0;
+    border-bottom: 1px solid #eeeeee;
+}
+
+/* Enlaces y botones */
+a {
+    color: #CC0000;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: #333333;
+}
+
+.button {
+    display: inline-block;
+    background-color: #CC0000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.2s;
+}
+
+.button:hover, button[type="submit"]:hover {
+    background-color: #AA0000; /* Efecto :hover en botones */
+}
+
+
+/* ===== CABECERA Y MENÚ SUPERIOR ===== */
+.site-header {
+  position: fixed; /* Header fijo */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333333;
+  color: white;
+  padding: 10px 5%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  /* USO DE FLEXBOX REQUERIDO */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-header h1 a {
+    color: white;
+    font-size: 1.3em;
+    padding-left: 50px;
+}
+
+.main-nav ul {
+  list-style: none;
+  /* USO DE FLEXBOX: Elementos del menú en línea */
+  display: flex;
+  gap: 20px;
+}
+
+.main-nav a {
+    color: white;
+    padding: 5px 0;
+}
+
+.main-nav a:hover {
+    color: #CC0000; /* :hover en menú superior */
+}
+
+/* Ocultar menú superior en vista móvil */
+@media (max-width: 768px) {
+    .main-nav {
+        display: none;
+    }
+}
+
+
+/* ===== MENÚ LATERAL SIN JAVASCRIPT (USANDO CHECKBOX) ===== */
+
+/* Ocultar el checkbox de control */
+.menu-toggle {
+    display: none;
+}
+
+/* Botón Hamburguesa Fijo (Label) */
+.open-menu {
+  position: fixed; /* Botón fijo (REQUERIDO) */
+  top: 10px;
+  left: 10px;
+  z-index: 20;
+  font-size: 20px;
+  background-color: #CC0000;
+  color: white;
+  border: none;
+  width: 35px;
+  height: 35px;
+  line-height: 35px; /* Centra el ícono */
+  text-align: center;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Ocultar botón en desktop */
+@media (min-width: 769px) {
+    .open-menu {
+        display: none;
+    }
+}
+
+/* Menú Lateral (Inicialmente Oculto) */
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: -230px;            /* oculto inicialmente (REQUERIDO) */
+  width: 230px;
+  height: 100%;
+  background-color: #333333;
+  padding-top: 60px;
+  transition: left 0.3s ease; /* Transición suave (REQUERIDO) */
+  z-index: 15;
+}
+
+.side-menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.side-menu a {
+  display: block;
+  padding: 12px 20px;
+  color: white;
+  transition: background-color 0.2s;
+}
+
+/* :hover para los enlaces del menú lateral (REQUERIDO) */
+.side-menu a:hover {
+    background-color: #CC0000;
+}
+
+/* LÓGICA SIN JAVASCRIPT: Si el checkbox está marcado... */
+
+/* 1. ... Muestra el menú lateral (deslizando) */
+.menu-toggle:checked ~ #sideMenu {
+  left: 0; /* Aparece (REQUERIDO) */
+}
+
+/* 2. ... Cambia el icono del botón hamburguesa a 'X' */
+.menu-toggle:checked + .open-menu {
+    content: "✖"; /* Cambia el contenido visual */
+    background-color: #AA0000;
+}
+/* Nota: El cambio de contenido se logra actualizando el texto del label directamente
+en el HTML o usando content en un pseudo-elemento, pero en este código,
+al ser un label, simplemente le damos estilos visuales al estar chequeado. */
+
+/* ============================ */
+/* ===== SECCIONES PRINCIPALES ===== */
+/* ============================ */
+
+/* SECCIÓN HERO (USO DE CSS GRID) */
+.hero-section {
+    padding-top: 20px;
+    display: grid;
+    /* USO DE CSS GRID REQUERIDO: Dos columnas */
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: center;
+    text-align: left;
+}
+
+.hero-text h2 {
+    text-align: left;
+    font-size: 2.5em;
+    margin-top: 0;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+@media (max-width: 600px) {
+    .hero-section {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .hero-text h2 {
+      text-align: center;
+    }
+    .hero-image {
+        order: -1;
+    }
+    .button {
+      width: 100%;
+      text-align: center;
+    }
+}
+
+/* SECCIÓN GALERÍA (USO DE CSS GRID) */
+.galeria-grid {
+    /* USO DE CSS GRID REQUERIDO: Galería de 3 columnas */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+}
+
+.galeria-grid .thumb {
+  width: 200px;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.galeria-grid a:hover .thumb {
+  transform: scale(1.1);
+  border-color: #333;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+
+
+.card {
+    overflow: hidden;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: transform 0.3s;
+}
+
+/* :hover en las tarjetas de la galería (REQUERIDO) */
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    display: block;
+}
+
+.card figcaption {
+    padding: 8px;
+    background-color: #f4f4f4;
+    font-size: 0.9em;
+    text-align: center;
+    color: #333;
+}
+
+/* SECCIÓN TABLA */
+table {
+    width: 90%;
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+thead {
+    background-color: #CC0000;
+    color: white;
+}
+
+/* :hover en filas de la tabla */
+tbody tr:hover {
+    background-color: #fff0f0;
+}
+
+/* SECCIÓN FORMULARIO */
+.formulario-section {
+    background-color: #f4f4f4;
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.contact-form label,
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    display: block;
+    width: 100%;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form button[type="submit"] {
+    width: 100%;
+}
+
+/* ========================== */
+/* ===== PIE DE PÁGINA (FOOTER) ===== */
+/* ========================== */
+.site-footer {
+  background-color: #333333;
+  color: white;
+  padding: 15px 5%;
+  /* USO DE FLEXBOX REQUERIDO */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9em;
+}
+
+.site-footer a {
+    color: white;
+    font-weight: bold;
+    background-color: #CC0000;
+    padding: 5px 10px;
+    border-radius: 50%;
+    line-height: 1;
+}
+
+.site-footer a:hover {
+    background-color: #AA0000;
+    color: white;
+}
