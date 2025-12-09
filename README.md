@@ -1,6 +1,8 @@
 # Prueba-RA2
 
-## ✅ 1A. Pregunta
+## ✅ Ejercicio 1.
+
+### 1A. Pregunta
 
 ¿Por qué NO se centra el texto del <h1> en este caso? Explícalo con tus palabras. (por qué visual y estructuralmente no aparece centrado entre el borde izquierdo y el menú).
 
@@ -8,11 +10,11 @@
 
 - text-align: "center" actúa sobre el contenido del h1, no sobre la posición del propio h1 dentro del header, por eso el título no se ve centrado entre el borde izquierdo y el menú.​
 
-## 1B. Ejercicio - Soluciona de dos formas diferentes
+### 1B. Ejercicio - Soluciona de dos formas diferentes
 
 Debes indicar dos formas diferentes de conseguir que el h1 si quede centrado visualmente en la cabecera.
 
-### Forma 1 (Flexbox)
+#### Forma 1 (Flexbox)
 
 .site-header {
   display: flex;
@@ -25,7 +27,7 @@ Debes indicar dos formas diferentes de conseguir que el h1 si quede centrado vis
   text-align: center;
 }
 
-### Forma 2 (CSS Grid)
+#### Forma 2 (CSS Grid)
 
 .site-header {
   display: grid;
