@@ -45,7 +45,7 @@ Debes indicar dos formas diferentes de conseguir que el h1 si quede centrado vis
   justify-self: end;
 }
 
-## 1C. Ejercicio - Convertir la cabecera en dos filas
+### 1C. Ejercicio - Convertir la cabecera en dos filas
 
 .site-header {
   display: grid;
@@ -63,7 +63,7 @@ Debes indicar dos formas diferentes de conseguir que el h1 si quede centrado vis
   grid-row: 2;
 }
 
-## 1D. Ejercicio - Dar relieve y separación visual al header
+### 1D. Ejercicio - Dar relieve y separación visual al header
 
 .site-header {
   background-color: #f5f5f5;
@@ -74,9 +74,9 @@ Debes indicar dos formas diferentes de conseguir que el h1 si quede centrado vis
 
 ## ✅ Ejercicio 2 - Reorganización del header con tres elementos
 
-## 2A. Ejercicio
+### 2A. Ejercicio
 
-### Cambio de HTML
+#### Cambio de HTML
 
 <header class="site-header">
   <button class="menu-btn" aria-label="Abrir menú lateral">☰</button>
@@ -87,9 +87,9 @@ Debes indicar dos formas diferentes de conseguir que el h1 si quede centrado vis
 </header>
 
 
-## 2B. Ejercicio
+### 2B. Ejercicio
 
-## Cambio del CSS
+#### Cambio del CSS
 
 .site-header {
   display: flex;
@@ -109,7 +109,7 @@ Debes indicar dos formas diferentes de conseguir que el h1 si quede centrado vis
   margin-left: auto;
 }
 
-## Cambio haciendo uso de Grid
+#### Cambio haciendo uso de Grid
 
 .site-header {
   display: grid;
@@ -133,9 +133,9 @@ Debes indicar dos formas diferentes de conseguir que el h1 si quede centrado vis
   justify-self: end;
 }
 
-### Ejercicio 3 - Miniaturas, zoom y enlace a la imagen original.
+## Ejercicio 3 - Miniaturas, zoom y enlace a la imagen original.
 
-## 3A. Crear miniaturas
+### 3A. Crear miniaturas
 
 <div class="galleia-grid">
   <a href="img/imagenA.jpg" target="_blank">
@@ -146,7 +146,7 @@ Debes indicar dos formas diferentes de conseguir que el h1 si quede centrado vis
   </a>
 </div>
 
-## 3B. Efecto hover
+### 3B. Efecto hover
 
 .gallery {
   display: flex;
