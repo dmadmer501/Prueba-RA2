@@ -15,21 +15,21 @@
 Debes indicar dos formas diferentes de conseguir que el h1 si quede centrado visualmente en la cabecera.
 
 #### Forma 1 (Flexbox)
-''''
+````
 .site-header {
   display: flex;
   align-items: center;
 }
-''''
-''''
+````
+````
 /* opción 1: que el h1 crezca y se centre */
 .site-header h1 {
   flex: 1;
   text-align: center;
 }
-''''
+````
 #### Forma 2 (CSS Grid)
-
+````
 .site-header {
   display: grid;
   grid-template-columns: 1fr auto 1fr;
@@ -45,9 +45,10 @@ Debes indicar dos formas diferentes de conseguir que el h1 si quede centrado vis
   grid-column: 3;
   justify-self: end;
 }
+````
 
 ### 1C. Ejercicio - Convertir la cabecera en dos filas
-
+````
 .site-header {
   display: grid;
   grid-template-columns: 1fr;
@@ -63,22 +64,22 @@ Debes indicar dos formas diferentes de conseguir que el h1 si quede centrado vis
 .site-header .main-nav {
   grid-row: 2;
 }
-
+````
 ### 1D. Ejercicio - Dar relieve y separación visual al header
-
+````
 .site-header {
   background-color: #f5f5f5;
   padding: 20px;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
-
+````
 ## ✅ Ejercicio 2 - Reorganización del header con tres elementos
 
 ### 2A. Ejercicio
 
 #### Cambio de HTML
-
+````
 <header class="site-header">
   <button class="menu-btn" aria-label="Abrir menú lateral">☰</button>
   <h1>Mi Sitio Web</h1>
@@ -86,12 +87,12 @@ Debes indicar dos formas diferentes de conseguir que el h1 si quede centrado vis
     nav
   </nav>
 </header>
-
+````
 
 ### 2B. Ejercicio
 
 #### Cambio del CSS
-
+````
 .site-header {
   display: flex;
   align-items: center;
@@ -109,9 +110,9 @@ Debes indicar dos formas diferentes de conseguir que el h1 si quede centrado vis
 .main-nav {
   margin-left: auto;
 }
-
+````
 #### Cambio haciendo uso de Grid
-
+````
 .site-header {
   display: grid;
   grid-template-columns: auto 1fr auto;
@@ -133,11 +134,11 @@ Debes indicar dos formas diferentes de conseguir que el h1 si quede centrado vis
   grid-column: 3;
   justify-self: end;
 }
-
+````
 ## Ejercicio 3 - Miniaturas, zoom y enlace a la imagen original.
 
 ### 3A. Crear miniaturas
-
+````
 <div class="galleia-grid">
   <a href="img/imagenA.jpg" target="_blank">
     <img src="img/imagenA.jpg" alt="Descripción A" class="thumb">
@@ -146,9 +147,9 @@ Debes indicar dos formas diferentes de conseguir que el h1 si quede centrado vis
     <img src="img/imagenB.jpg" alt="Descripción B" class="thumb">
   </a>
 </div>
-
+````
 ### 3B. Efecto hover
-
+````
 .gallery {
   display: flex;
   flex-wrap: wrap;
@@ -168,5 +169,5 @@ Debes indicar dos formas diferentes de conseguir que el h1 si quede centrado vis
   border-color: #333;
   box-shadow: 0 4px 8px rgba(0,0,0,0.3);
 }
-
+````
 
