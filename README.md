@@ -15,18 +15,19 @@
 Debes indicar dos formas diferentes de conseguir que el h1 si quede centrado visualmente en la cabecera.
 
 #### Forma 1 (Flexbox)
-'''
+''''
 .site-header {
   display: flex;
   align-items: center;
 }
-
+''''
+''''
 /* opción 1: que el h1 crezca y se centre */
 .site-header h1 {
   flex: 1;
   text-align: center;
 }
-'''
+''''
 #### Forma 2 (CSS Grid)
 
 .site-header {
