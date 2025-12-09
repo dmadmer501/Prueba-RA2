@@ -2,7 +2,7 @@
 
 ## ✅ 1A. Pregunta
 
-¿Por qué NO se centra el texto del <h1> en este caso? Explícalo con tus palabras. (por qué visual y estructuralmente no aparece centrado entre el borde izquierdo y el menú)
+¿Por qué NO se centra el texto del <h1> en este caso? Explícalo con tus palabras. (por qué visual y estructuralmente no aparece centrado entre el borde izquierdo y el menú).
 
 - El contenedor .site-header es un flex  en fila, lo que coloca uno pegado a la izquierda y otro pegado a la derecha.​
 
