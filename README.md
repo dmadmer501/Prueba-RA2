@@ -1,11 +1,12 @@
 # Prueba-RA2
 
 ## ✅ 1A. Pregunta
-### ¿Por qué NO se centra el texto del <h1> en este caso? Explícalo con tus palabras por qué visual y estructuralmente no aparece centrado entre el borde izquierdo y el menú).
 
-* El contenedor .site-header es un flex  en fila, lo que coloca uno pegado a la izquierda y otro pegado a la derecha.​
+¿Por qué NO se centra el texto del <h1> en este caso? Explícalo con tus palabras. (por qué visual y estructuralmente no aparece centrado entre el borde izquierdo y el menú)
 
-* text-align: "center" actúa sobre el contenido del h1, no sobre la posición del propio h1 dentro del header, por eso el título no se ve centrado entre el borde izquierdo y el menú.​
+- El contenedor .site-header es un flex  en fila, lo que coloca uno pegado a la izquierda y otro pegado a la derecha.​
+
+- text-align: "center" actúa sobre el contenido del h1, no sobre la posición del propio h1 dentro del header, por eso el título no se ve centrado entre el borde izquierdo y el menú.​
 
 ## 1B. Ejercicio - Soluciona de dos formas diferentes
 
